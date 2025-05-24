@@ -39,6 +39,35 @@ EC = [
     "IIT BHU - 3441",
 ]
 
+collegeList = [
+    "IIT BOMBAY - CS - 68",
+    "IIT DELHI - CS - 119",
+    "IIT KANPUR - CS - 248",
+    "IIT DELHI - MNC - 329",
+    "IIT KHARAGPUR - CS - 414",
+    "IIT MADRAS - CS - 149"
+    "IIT MADRAS - AI - 415"
+    "IIT ROORKEE - CS - 481",
+    "IIT BOMBAY - EC - 464",
+    "IIT DELHI - EC - 622",
+    "IIT ROORKEE - AI - 677",
+    "IIT KHARAGPUR - AI - 795",
+    "IIT KANPUR - MNC - 926",
+    "IIT KHARAGPUR - MNC - 1250",
+    "IIT KANPUR - EC - 1260",
+    "IIT KHARAGPUR - EC - 1880",
+    "IIT ROORKEE - EC - 1970"
+    "IIT BOMBAY - BS(MATH) - 1191",
+    "IIT BOMBAY - Economics - 2282",
+    "IIT DELHI - COMPUTATIONAL MECHNAINCS - 1154",
+    "IIT KANPUR - ECONOMICS - 2990"
+    "IIT DELHI - MECHANICAL - 1774",
+    "IIT BOMBAY - CHEMICAL - 2500",
+    "IIT DELHI - CHEMICAL - 2200",
+    "IIT BOMBAY - AEROSPACE - 2388",
+    "IIT DELHI - CHEMICAL  - 2200"
+]
+
 # userInput = input("Enter the college: ")
 # print(college[userInput])
 
@@ -76,12 +105,18 @@ userChoice = int(input("Please Enter 1 or 2: "))
 if (userChoice==1):
     user1 = input("Enter the College: ")
     print("\n")
-    persCollege(user1)
+    persCollege(user1.upper())
     print("\n")
 elif(userChoice==2):
-    userBranchChoice = input("Enter the name of branch you wanna check in capital letters: ")
+    userBranchChoice = input("Enter the name of branch you wanna check: ")
     print("\n")
-    rankSorter(userBranchChoice)
+    rankSorter(userBranchChoice.upper())
+    print("\n")
+elif(userChoice==3):
+    print("\n")
+    for i in collegeList:
+        print(i)
     print("\n")
 else:
     pass
+
